@@ -109,7 +109,7 @@ export default function HomePage() {
 
       <section className="page">
         <div className="section-heading">
-          <h2>口コミ対象を探す</h2>
+          <h2>口コミを探す</h2>
           <span>{filteredBusinesses.length}件</span>
         </div>
         {error && <p className="alert error">{error}</p>}

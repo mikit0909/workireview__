@@ -233,7 +233,7 @@ textarea {
 .section-heading h2,
 .form-shell h1,
 .static-page h1 {
-  font-size: clamp(24px, 4vw, 34px);
+  font-size: clamp(20px, 3.2vw, 28px);
   margin: 0;
 }
 
@@ -431,7 +431,7 @@ textarea {
 }
 
 .detail-header h1 {
-  font-size: clamp(24px, 4vw, 36px);
+  font-size: clamp(20px, 3.2vw, 30px);
   letter-spacing: 0;
   line-height: 1.18;
   margin: 10px 0 0;
@@ -439,12 +439,12 @@ textarea {
 
 .rating-summary {
   color: #b45309;
-  font-size: 14px;
+  font-size: 13px;
   margin: 22px 0;
 }
 
 .rating-summary strong {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .review-panel {
@@ -452,7 +452,7 @@ textarea {
 }
 
 .review-panel h2 {
-  font-size: 22px;
+  font-size: 18px;
   margin-top: 0;
 }
 
