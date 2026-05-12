@@ -93,7 +93,7 @@ export default function ReviewFormPage() {
           <section className="review-form-section">
             <div className="review-section-title">
               <CalendarDays size={20} />
-              <span>勤務時期</span>
+              <span>時期</span>
             </div>
             <div className="month-range">
               <label>

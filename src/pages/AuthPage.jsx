@@ -20,7 +20,7 @@ export default function AuthPage() {
   async function handleEmailAuth(event) {
     event.preventDefault()
     if (!isSupabaseConfigured) {
-      setError('Supabaseの環境変数が未設定です。.env に VITE_SUPABASE_URL と VITE_SUPABASE_ANON_KEY を設定してください。')
+      setError('Supabaseの環境変数が未設定、またはanon keyに日本語・余計な文字が入っています。VITE_SUPABASE_ANON_KEY は eyJ で始まる長い英数字だけにしてください。')
       return
     }
 
@@ -50,7 +50,7 @@ export default function AuthPage() {
 
   async function handleGoogleSignIn() {
     if (!isSupabaseConfigured) {
-      setError('Supabaseの環境変数が未設定です。.env に VITE_SUPABASE_URL と VITE_SUPABASE_ANON_KEY を設定してください。')
+      setError('Supabaseの環境変数が未設定、またはanon keyに日本語・余計な文字が入っています。VITE_SUPABASE_ANON_KEY は eyJ で始まる長い英数字だけにしてください。')
       return
     }
 

@@ -156,7 +156,7 @@ export default function BusinessDetailPage() {
                   <div className="review-tags">
                     {(review.work_started_on || review.work_ended_on) && (
                       <span>
-                        勤務時期: {formatMonth(review.work_started_on) || '不明'}〜
+                        時期: {formatMonth(review.work_started_on) || '不明'}〜
                         {formatMonth(review.work_ended_on) || '不明'}
                       </span>
                     )}
