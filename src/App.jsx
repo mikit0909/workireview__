@@ -1,4 +1,5 @@
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import { Home, LogIn, PlusCircle, UserCircle } from 'lucide-react'
 import { useAuth } from './context/AuthContext'
 import HomePage from './pages/HomePage'
@@ -114,6 +115,7 @@ export default function App() {
         <Route path="/contact" element={<StaticPage type="contact" />} />
       </Routes>
       <Footer />
+      <Analytics />
     </>
   )
 }
