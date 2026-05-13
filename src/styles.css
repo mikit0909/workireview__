@@ -511,13 +511,6 @@ textarea {
   color: var(--deep-blue);
 }
 
-.button.google {
-  background: white;
-  border: 1px solid var(--line);
-  color: var(--ink);
-  width: 100%;
-}
-
 .button.full {
   width: 100%;
 }

@@ -48,19 +48,6 @@ export default function AuthPage() {
     setLoading(false)
   }
 
-  async function handleGoogleSignIn() {
-    if (!isSupabaseConfigured) {
-      setError('Supabaseの環境変数が未設定、またはanon keyに日本語・余計な文字が入っています。VITE_SUPABASE_ANON_KEY は eyJ で始まる長い英数字だけにしてください。')
-      return
-    }
-
-    setError('')
-    await supabase.auth.signInWithOAuth({
-      provider: 'google',
-      options: { redirectTo: `${window.location.origin}/mypage` },
-    })
-  }
-
   return (
     <main className="page narrow">
       <div className="form-shell">
@@ -75,9 +62,6 @@ export default function AuthPage() {
         </div>
         {error && <p className="alert error">{error}</p>}
         {message && <p className="alert success">{message}</p>}
-        <button className="button google" type="button" onClick={handleGoogleSignIn}>
-          Googleで続ける
-        </button>
         <form className="stack-form" onSubmit={handleEmailAuth}>
           {mode === 'signup' && (
             <label>

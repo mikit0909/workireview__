@@ -8,12 +8,7 @@
 
 ## 2. Supabase認証を設定
 
-Authentication > Providers で次を有効化します。
-
-- Email
-- Google
-
-Google認証ではGoogle Cloud ConsoleでOAuthクライアントを作成し、SupabaseのCallback URLをGoogle側の承認済みリダイレクトURIに追加します。
+Authentication > Providers で `Email` を有効化します。
 
 Authentication > URL Configuration で下記を設定します。
 
